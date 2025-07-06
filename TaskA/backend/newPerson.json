@@ -1,0 +1,10 @@
+{
+  "name": "Cade",
+  "phone_number": "123-456-7890",
+  "city": "Denver",
+  "state": "CO",
+  "street1": "123 1st Street",
+  "street2": "Unit A",
+  "zip_code": "12345",
+  "age": 30
+}
