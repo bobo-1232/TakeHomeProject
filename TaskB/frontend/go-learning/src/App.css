@@ -1,0 +1,121 @@
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.person-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.person-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.pagination-controls button {
+  padding: 6px 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+.page-indicator {
+  font-size: 16px;
+}
+
+.pagination-controls button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1976d2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background-color: #42a5f5; /* lighter blue on hover */
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+.form-page-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-page-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.person-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.person-form input {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.person-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.person-form button:hover {
+  background-color: #42a5f5;
+}

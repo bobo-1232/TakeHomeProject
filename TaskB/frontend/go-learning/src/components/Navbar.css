@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #1976d2;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* light gray on hover */
+}
