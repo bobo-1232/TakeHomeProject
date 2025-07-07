@@ -16,7 +16,11 @@ This project includes a Golang backend using Gin and a ReactJS frontend, backed 
 
    ```bash
    git clone https://github.com/bobo-1232/TakeHomeProject.git
-   cd TakeHomeProject/backend
+
+   cd TakeHomeProject/TaskA/backend
+   or
+   cd TakeHomeProject/TaskB/backend
+
    ```
 
 2. Set up the MySQL database:
@@ -49,7 +53,35 @@ This project includes a Golang backend using Gin and a ReactJS frontend, backed 
 
 ---
 
-## Frontend Setup (React)
+## Test POST /person/create (Task A)
+
+You can test the `POST /person/create` endpoint using a tool like **Postman** or **cURL**:
+
+### Request
+
+**POST** `http://localhost:8080/person/create`  
+**Content-Type:** `application/json`
+
+### Example JSON Body
+
+```json
+{
+  "name": "Sarah",
+  "phone_number": "555-123-4567",
+  "city": "Denver",
+  "state": "CO",
+  "street1": "789 Broadway",
+  "street2": "Unit 5",
+  "zip_code": "80203"
+}
+```
+
+### Expected Response
+
+- HTTP `200 OK` on success
+- Check the database to confirm the new person and related entries were inserted
+
+## Frontend Setup (React) - Task B only
 
 1. Navigate to the frontend directory:
 
@@ -79,31 +111,3 @@ This project includes a Golang backend using Gin and a ReactJS frontend, backed 
 - Verify frontend: open [http://localhost:3000](http://localhost:3000)
 
 ---
-
-## Test POST /person/create (Task A)
-
-You can test the `POST /person/create` endpoint using a tool like **Postman** or **cURL**:
-
-### Request
-
-**POST** `http://localhost:8080/person/create`  
-**Content-Type:** `application/json`
-
-### Example JSON Body
-
-```json
-{
-  "name": "Sarah",
-  "phone_number": "555-123-4567",
-  "city": "Denver",
-  "state": "CO",
-  "street1": "789 Broadway",
-  "street2": "Unit 5",
-  "zip_code": "80203"
-}
-```
-
-### Expected Response
-
-- HTTP `200 OK` on success
-- Check the database to confirm the new person and related entries were inserted
